@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>J3H2</title>
+        <script>
+            function song(audio){
+
+                document.getElementById('song1').pause();
+                document.getElementById('song2').pause();
+
+                document.getElementById(audio).play();
+                
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <audio src="song1.mp3" id="song1"></audio>
+            <audio src="song2.mp3" id="song2"></audio>
+            
+            <table width="500px">
+                <tr align="center">
+                    <td bgcolor="lightgreen" colspan="2">Song 1</td>
+                </tr>
+                <tr align="center">
+                    <td>Click and Play 1</td>
+                    <td><button onclick="javascript:song('song1')">Play Audio</button></td>
+                </tr>
+                <tr align="center">
+                    <td bgcolor="yellow" colspan="2">Song 2</td>
+                </tr>    
+                <tr align="center">
+                    <td>Click and Play 2</td>
+                    <td><button onclick="javascript:song('song2')">Play Audio</button></td>
+                </tr>                
+            </table>
+        </center>
+    </body>
+</html>
